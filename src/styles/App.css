@@ -1,0 +1,95 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #424c51;
+}
+
+.app-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #eb9191;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.todo-list {
+  margin-top: 20px;
+}
+
+.addTask {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo-input {
+  width: 100;   
+  padding: 12px; 
+  font-size: 18px;  
+  margin-bottom: 10px; 
+}
+
+.addTask button {
+  padding: 16px 32px; 
+  font-size: 18px;   
+  margin-top: 10px; 
+  margin-bottom: 10px;
+}
+.todo-button,
+.sort-button,
+.action-button {
+  padding: 12px 24px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.item-wrapper {
+  margin-top: 2px;
+  padding: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.task-title {
+  font-size: 18px;
+  margin: 0;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+}
+
+.action-buttons button {
+  padding: 16px; 
+  font-size: 14px;
+  margin-left: 10px; /* Add some spacing between buttons if needed */
+} 
+
+.completed {
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+
+.completed::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+
+
+.todo-image {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
