@@ -43,8 +43,6 @@ const App = () => {
     }
   };
   
-  
-
   const deleteTask = async (taskId) => {
     try {
       await axios.delete(`${API_URL}/${taskId}`);
